@@ -19,7 +19,7 @@ class SRS830():
         value = float(self.instrument.read())
         OutputDictionary = {1:"X", 2:"Y", 3:"R", 4:"Theta"}
         setattr(self, OutputDictionary[i], value) 
-        return
+        return value
         
     def set_aux_out(self, i, voltage):
         # Set aux out i to voltage
